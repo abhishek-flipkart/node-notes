@@ -1,0 +1,15 @@
+Buffer 
+------------
+1. Creating buffer
+  
+  Buffers can be created from string, array and object(supporting 
+  Symbol.toPrimitive or valueOf())
+  
+  e.g. const bufferedData = Buffer.from(new Object("Hello"));
+  
+  
+2. Converting from buffer
+  
+  To convert buffer back to string use toString(format)
+  
+  e.g bufferedData.toString('utf-8');

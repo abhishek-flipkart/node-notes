@@ -1,0 +1,28 @@
+Net
+--------------
+Provides an asynchronous network API for creating stream-based TCP or IPC 
+servers (net.createServer()) and clients (net.createConnection()).
+Both server(net.Server) and client(net.Socket) implements EventEmitter and 
+exposes certain events plus they have some methods also.
+
+Their are two ways to create stream based server :
+  1 . net.createServer(callback);
+      Returns instance of net.Server;
+      The callback gives socket.The socket exposes event using which we can 
+      get data.
+  
+  2 . new net.Server();
+      const server  = new net.Server();
+      server.on('connection', callback)
+      This callback also gives socket.
+  
+  
+Similarly their are two ways to create stream based client: 
+  1 . net.createConnection();
+      Returns instance of net.Socket
+      The socket exposes event using which we can get data.
+  2 . new net.Socket();
+      
+      
+  
+

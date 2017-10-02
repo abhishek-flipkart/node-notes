@@ -1,0 +1,13 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "Sample application",
+  "main": "sample.js",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "author": "Abhishek Panda",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

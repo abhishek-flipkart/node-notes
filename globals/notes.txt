@@ -1,0 +1,29 @@
+Globals
+------------
+Built-in objects that are globally accessible : 
+
+1 . Buffer
+----------------------------|
+2 . __dirname               |
+3 . __filename              |
+4 . exports                 |----> Seems to be global but are local to module
+5 . module                  |
+6 . require()               |
+----------------------------|
+7 . console
+8 . process   
+9 . global
+
+Note : In Node their is no top level scope. Unlike in browsers, the top level 
+scope is "window". Any thing declared with "var" at the top level is bound to
+window scope. In Node it is different any thing declared with "var" within
+a file(module) is global to that file only & is not accessible outside that
+file. 
+
+To make available to other file either we have to export the variable or 
+declared it on the "global".
+
+e.g. var name = "Sairam"; // local/global to that file.
+
+global.name = "Sairam"; // Accessing through out all modules whoever includes
+                        // that file(module)
